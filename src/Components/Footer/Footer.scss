@@ -1,7 +1,15 @@
 .Footer {
+  margin-top: 160px;
+  h2 {
+    text-align: start;
+  }
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-
+  &__image {
+    background:blue;
+  }
 }
