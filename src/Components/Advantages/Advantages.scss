@@ -1,0 +1,22 @@
+.Advantages {
+  margin-bottom: 160px;
+  > p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 80px;
+    > span {
+      font-weight: bold;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+  }
+  &__item {
+    text-align: center;
+    > svg {
+      font-size: 80px;
+    }
+  }
+}

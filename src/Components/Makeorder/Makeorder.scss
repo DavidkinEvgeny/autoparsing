@@ -1,0 +1,18 @@
+.Makeorder {
+  margin-bottom: 160px;
+  > h2 {
+    margin-bottom: 80px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+  }
+  &__item {
+    text-align: center;
+    > svg {
+      font-size: 100px;
+    }
+    
+  }
+}
