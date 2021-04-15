@@ -1,0 +1,53 @@
+.Feedback {
+    > p {
+        text-align: center;
+    }
+    > input {
+        border-radius: 30px;
+        margin-bottom: 40px;
+        font-size: 24px;
+        &::placeholder {
+            font-size: 30px;
+            padding-left: 20px;
+        }
+        &[tupe='submit'] {
+            font-size: 30px;
+        }
+    }
+    > .PhoneInput {
+        margin-bottom: 40px;
+        > input {
+            border-radius: 30px;
+            height: 60px;
+            font-size: 24px;
+            &::placeholder {
+                font-size: 30px;
+                padding-left: 20px;
+            }
+        }
+    }
+    &__header {
+        position: absolute;
+        top: 15px;
+        right: 200px;
+        width: 600px;
+        box-sizing: border-box;
+        padding: 40px 20px;
+        border: 3px solid red;
+        border-radius: 10px;
+        > input {
+            width: 100%;
+            height: 60px;
+        }
+    }
+    &__footer {
+        > input {
+            width: 400px;
+            height: 60px;
+        }
+        > .PhoneInput {
+            width: 400px;
+            height: 60px;
+        }
+    }
+}
