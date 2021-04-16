@@ -1,0 +1,41 @@
+.Sparepartsform {
+  > form {
+    width: 900px;
+    margin: 0 auto;
+    > legend {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      font-size: 24px;
+      > input {
+        width: 500px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 24px;
+      }
+      > .PhoneInput {
+        width: 500px;
+        > input {
+          height: 40px;
+          border-radius: 20px;
+          font-size: 24px;
+          
+        }
+      }
+      > textarea {
+        width: 500px;
+        height: 100px;
+        border-radius: 20px;
+        font-size: 24px;
+      }
+    }
+    > button {
+      display: block;
+      margin: 0 auto;
+      width: 500px;
+        height: 40px;
+        border-radius: 20px;
+      // justify-content: center;
+    }
+  }
+}

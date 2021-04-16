@@ -13,15 +13,15 @@ function Feedbackform(props) {
   const [tel, setTel] = useState('')
   let titles 
   if (props.classes === 'Feedback__header') {
-     titles = <React.Fragment>
+    titles = <div className='Feedback__title'>
       <h3>Оставить заявку</h3>
       <p>Менеджер свяжется с вами после отправки формы и назовёт предварительную стоимость</p>
-    </React.Fragment>
+    </div>
   } else {
-    titles = <React.Fragment>
+    titles = <div className='Feedback__title'>
       <h3>Оперативно расчитаем стоимость Вашей заявки</h3>
       <p>Заполните форму и наш менеджер вас проконсультирует</p>
-    </React.Fragment>
+    </div>
   }
 
   return(
