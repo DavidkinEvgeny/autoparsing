@@ -1,5 +1,5 @@
 .Footer {
-  margin-top: 160px;
+  // margin-top: 160px;
   h2 {
     text-align: start;
   }
@@ -9,7 +9,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  &__social {
+    > h4 {
+      > svg {
+        font-size: 62px;
+      }
+    }
+    > p {
+      > a {
+        text-decoration: none;
+        color: #000;
+        font-size: 32px;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
   &__image {
-    background:blue;
+    background:url(./../../images/Footer2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
   }
 }

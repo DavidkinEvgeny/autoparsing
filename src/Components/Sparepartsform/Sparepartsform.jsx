@@ -103,7 +103,7 @@ function Sparepartsform() {
             onChange={(e) => setInform(e.target.value)}
           />
         </legend>
-        <button type='submit'>Отправить</button>
+        <button type='submit'>Заказать</button>
       </form>
     </div>
   )

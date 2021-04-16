@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.scss'
+import { FaWhatsapp } from 'react-icons/fa'
 
 
 function Footer() {
@@ -13,7 +14,7 @@ function Footer() {
             <p><a href='tel:+79990957717'>+7 (999) 095-77-17</a></p>
             <h4>Email:</h4>
             <p><a href='mailto:irus210992@mail.ru'>irus210992@mail.ru</a></p>
-            <h4>WhatsApp:</h4>
+            <h4><FaWhatsapp /></h4>
             <p><a href='whatsapp://tel:+79990957717'>Пишите на WhatsApp</a></p>
           </div>
           <div className='Footer__schedule'>

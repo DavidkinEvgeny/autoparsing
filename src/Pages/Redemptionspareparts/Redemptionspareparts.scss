@@ -1,0 +1,10 @@
+.Redemptionspareparts {
+  margin-bottom: 160px;
+  &__image {
+    height: 640px;
+    background: url(./../../images/Redemptionspareparts.jpeg);
+    background-size: cover;
+    background-attachment: scroll;
+    margin-top: 160px;
+  }
+}

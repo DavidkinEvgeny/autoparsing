@@ -1,4 +1,5 @@
 .Advantages {
+  margin-top: 160px;
   margin-bottom: 160px;
   > p {
     text-align: center;
@@ -18,5 +19,12 @@
     > svg {
       font-size: 80px;
     }
+  }
+  &__image {
+    margin-top: 160px;
+    height: 400px;
+    background: url(./../../images/Homedelimetr.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }

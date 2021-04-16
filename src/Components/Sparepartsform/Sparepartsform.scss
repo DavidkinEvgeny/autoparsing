@@ -1,4 +1,5 @@
 .Sparepartsform {
+  margin-top: 160px;
   > form {
     width: 900px;
     margin: 0 auto;
@@ -12,6 +13,7 @@
         height: 40px;
         border-radius: 20px;
         font-size: 24px;
+        outline: none;
       }
       > .PhoneInput {
         width: 500px;
@@ -19,7 +21,7 @@
           height: 40px;
           border-radius: 20px;
           font-size: 24px;
-          
+          outline: none;
         }
       }
       > textarea {

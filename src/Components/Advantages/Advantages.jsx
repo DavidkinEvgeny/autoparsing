@@ -33,6 +33,7 @@ function Advantages() {
           <p>Среднее время доставки запчастей по России от 5 до 20 рабочих дней</p>
         </div>
       </div>
+      <div className='Advantages__image'></div>
     </div>
   )
 }

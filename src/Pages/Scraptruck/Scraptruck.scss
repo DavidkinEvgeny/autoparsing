@@ -1,0 +1,10 @@
+.Scraptruck {
+  margin-bottom: 160px;
+  &__image {
+    height: 1000px;
+    background: url(./../../images/Scraptruck.jpeg);
+    background-size: cover;
+    background-attachment: scroll;
+    margin-top: 160px;
+  }
+}

@@ -1,0 +1,10 @@
+.Towtruck {
+  margin-bottom: 160px;
+  &__image {
+    height: 1280px;
+    background: url(./../../images/Towtruck.jpeg);
+    background-size: cover;
+    background-attachment: scroll;
+    margin-top: 160px;
+  }
+}
