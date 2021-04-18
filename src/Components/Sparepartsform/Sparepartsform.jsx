@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
 import './Sparepartsform.scss'
@@ -14,15 +15,40 @@ function Sparepartsform() {
   const [money, setMoney] = useState('') // Желаемая сумма выкупа
   const [inform, setInform] = useState('') // Дополнительная информация
 
+  async function handleSubmit(e) {
+    e.preventDefault()
+    console.log(name, tel)
+    const form1 = axios.post('/api/form1', {
+      name,
+      tel,
+      email,
+      model,
+      years,
+      volume,
+      money,
+      inform
+    })
+    setName('')
+    setTel('')
+    setEmail('')
+    setModel('')
+    setYears('')
+    setVolume('')
+    setMoney('')
+    setInform('')
+  }
+
   return(
     <div className='Sparepartsform'>
 
       <form
-        onSubmit={(e) => {
-          e.preventDefault()
-          console.log(name, tel, email, model,years, volume, money, inform)
-          setEmail('')
-        }}
+        onSubmit={handleSubmit
+        //   (e) => {
+        //   e.preventDefault()
+        //   console.log(name, tel, email, model,years, volume, money, inform)
+        //   setEmail('')
+        // }
+      }
       >
         <legend>
           Введите имя

@@ -70,16 +70,16 @@
             width: 600px;
             height: 60px;
             margin: 120px auto 0;
-            border: 3px solid red;
-            background: rgba(#f00, .2);
+            border: 3px solid #fff;
+            background: rgba(#fff, .2);
             color: #fff;
             &[type="text"] {
                 grid-area: name;
             }
             &[type="submit"] {
                 grid-area: submit;
-                color: yellow;
-                background: rgba(#f00, .2);
+                color: #fff;
+                background: rgba(#fff, .2);
             }
         }
         > .PhoneInput {
@@ -88,8 +88,8 @@
             height: 60px;
             margin: 120px auto 0;
             > input {
-                border: 3px solid red;
-                background: rgba(#f00, .2);
+                border: 3px solid #fff;
+                background: rgba(#fff, .2);
                 color: #fff;
             }
         }

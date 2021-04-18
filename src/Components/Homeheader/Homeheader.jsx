@@ -10,8 +10,8 @@ function Homeheader() {
       <div className='Homeheader__wrapper'>
         <div className='Homeheader__title'>
           <h1>Автозапчасти для российских автомобилей</h1>
-          <p>Большой склад российских оригинальных автозапчастей  Более 20 000 товаров</p>
-          <p>Цены ниже, чем у конкурентов! Прямые поставки от производителей</p>
+          <p>Широкий ассортимент запчастей на все марки российских авто</p>
+          <p>Цены ниже, чем у конкурентов!</p>
         </div>
         <Feedbackform classes='Feedback__header'/>
         <div className='Homeheader__price'>

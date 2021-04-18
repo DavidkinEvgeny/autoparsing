@@ -5,8 +5,9 @@ import Redemptionspareparts from './Pages/Redemptionspareparts/Redemptionsparepa
 import Scraptruck from './Pages/Scraptruck/Scraptruck';
 import Towtruck from './Pages/Towtruck/Towtruck';
 import Scrap from './Pages/Scrap/Scrap';
-import Sale from './Pages/Sale/Sale';
+// import Sale from './Pages/Sale/Sale';
 import { Route } from 'react-router-dom'
+import Ticker from './Components/Ticker/Ticker';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Route path='/scraptruck' component={Scraptruck} />
       <Route path='/towtruck' component={Towtruck} />
       <Route path='/scrap' component={Scrap} />
-      <Route path='/sale' component={Sale} />
+      {/* <Route path='/sale' component={Sale} /> */}
+      <Ticker />
     </div>
   );
 }

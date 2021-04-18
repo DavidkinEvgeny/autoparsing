@@ -8,8 +8,8 @@ function Redemptionspareparts() {
   return(
     <Mainwrapper>
       <div className='Redemptionspareparts'>
-        <h2>Запчасти</h2>
-        <p>Почему купить б/у запчасти для легковых автомобилей в Москве выгодно на "айрусавто"?</p>
+        <h1>Запчасти</h1>
+        <p>Почему купить б/у запчасти для легковых автомобилей в Москве выгодно на "irusauto"?</p>
         <p>Интернет-магазин "irusauto" предлагает купить б/у запчасти в Москве на отечественные автомобили на выгодных условиях.</p>
         <Sparepartsform />
         <div className='Redemptionspareparts__image' />

@@ -1,5 +1,9 @@
 .Redemptionauto {
   margin-bottom: 160px;
+  > h1, h3, p, ul, ol {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   &__image {
     height: 700px;
     background: url(./../../images/Redemptionauto.jpeg);

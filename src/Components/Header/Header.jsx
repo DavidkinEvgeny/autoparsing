@@ -25,7 +25,7 @@ function Header() {
             <li><NavLink to='/scraptruck'>Услуги ломовоза</NavLink></li>
             <li><NavLink to='/towtruck'>Услуги эвакуатора</NavLink></li>
             <li><NavLink to='/scrap'>Выкуп лома</NavLink></li>
-            <li><NavLink to='/sale'>Продажа авто</NavLink></li>
+            {/* <li><NavLink to='/sale'>Продажа авто</NavLink></li> */}
           </ul>
         </menu>
       </div>

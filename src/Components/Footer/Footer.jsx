@@ -23,9 +23,9 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='Footer__image'>
+      {/* <div className='Footer__image'>
 
-      </div>
+      </div> */}
     </div>
   )
 }
