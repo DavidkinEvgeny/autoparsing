@@ -4,6 +4,12 @@
     margin-left: 30px;
     margin-right: 30px;
   }
+  > p {
+    > span {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
   &__image {
     height: 1200px;
     background: url(./../../images/Scrap.jpeg);

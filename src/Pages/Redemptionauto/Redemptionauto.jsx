@@ -1,6 +1,7 @@
 import React from 'react'
 import Mainwrapper from './../../UI/Mainwrapper/Mainwrapper';
 import './Redemptionauto.scss'
+import Sparepartsform from './../../Components/Sparepartsform/Sparepartsform';
 
 
 function Redemptionauto() {
@@ -25,6 +26,7 @@ function Redemptionauto() {
         <p>Пример:<br />Если у вас автомобиль не на ходу, неисправность двигателя или ходовой, то мы можем привезти Ваш авто в нашу мастерскую за свой счет, при условии, что Вы покупаете у нас необходимую для запчасть (двигатель или ходовую).</p>
         <p>Звоните, поможем +7(999)095-77-17</p> */}
         <div className='Redemptionauto__image' />
+        <Sparepartsform />
       </div>
     </Mainwrapper>
   )

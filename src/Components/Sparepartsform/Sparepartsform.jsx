@@ -69,7 +69,7 @@ function Sparepartsform() {
             onChange={(value) => setTel(value)}
           />
         </legend>
-        <legend>
+        {/* <legend>
           E-mail
           <input
             type='email' 
@@ -118,7 +118,7 @@ function Sparepartsform() {
             value={money} 
             onChange={(e) => setMoney(e.target.value)}
           />
-        </legend>
+        </legend> */}
         <legend>
           Дополнительная информация
           <textarea
