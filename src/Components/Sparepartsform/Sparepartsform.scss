@@ -1,7 +1,7 @@
 .Sparepartsform {
   margin-top: 160px;
   > form {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     > legend {
       display: flex;
@@ -30,14 +30,34 @@
         border-radius: 20px;
         font-size: 24px;
       }
+      @media(max-width: 768px) {
+        flex-direction: column;
+        padding: 0 10px;
+        box-sizing: border-box;
+        > input {
+          width: 100%;
+          margin-top: 15px;
+        }
+        > .PhoneInput {
+          width: 100%;
+          margin-top: 15px;
+        }
+        > textarea {
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
     }
     > button {
       display: block;
       margin: 0 auto;
       width: 500px;
-        height: 40px;
-        border-radius: 20px;
+      height: 40px;
+      border-radius: 20px;
       // justify-content: center;
+      @media(max-width: 768px) {
+        width: 300px;
+      }
     }
   }
 }

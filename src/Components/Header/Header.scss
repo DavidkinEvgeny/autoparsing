@@ -6,23 +6,54 @@
   margin-bottom: 160px;
   &__logo {
     grid-area: logo;
+    min-height: 150px;
     background: blue;
   }
-  &__social {
+    &__social {
     grid-area: social;
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-areas: "tel whatsapp mail";
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    &-tel {
+      grid-area: tel;
+    }
+    &-whatsapp {
+      grid-area: whatsapp;
+    }
+    &-mail {
+      grid-area: mail;
+    }
     > p {
       margin-right: 30px;
+      text-align: center;
+      &:nth-child(2) {
+        > a {
+          color: green;
+        }
+      }
       > a {
         color: #000;
         font-weight: bold;
         font-size: 32px;
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
         > svg {
           font-size: 48px;
+          margin: 0 auto;
+        }
+        > p {
+          margin: 0;
+          text-align: center;
         }
       }
+    }
+    @media(max-width: 1440px) {
+      grid-template-areas: "tel tel"
+                           "whatsapp mail";
+      grid-template-columns: 1fr 1fr;
+
     }
   }
   &__menu {
@@ -62,5 +93,11 @@
         }
       }
     }
+  }
+  @media(max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo"
+                         "social"
+                         "menu";
   }
 }

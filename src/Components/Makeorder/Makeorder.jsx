@@ -14,11 +14,11 @@ function Makeorder() {
       <div className='Makeorder__wrapper'>
         <div className='Makeorder__item'>
           <TiMessage />
-          <p>Свяжитесь с нами, любым удобным для вас способом, либо оформите заявку на нашем сайте</p>
+          <p>Свяжитесь с нами, любым удобным для Вас способом, либо оформите заявку на нашем сайте</p>
         </div>
         <div className='Makeorder__item'>
           <IoIosPhonePortrait />
-          <p>Наши сотрудники ответят на Ваш звонок или запрос. Сообщат о наличии и цене запчасти</p>
+          <p>Наши сотрудники ответят на Ваш звонок или запрос. Сообщат о наличии и ценах на запчасти</p>
         </div>
         <div className='Makeorder__item'>
           <GiBackwardTime />

@@ -10,7 +10,7 @@ function Advantages() {
   return(
     <div className='Advantages'>
       <h2>Наши преимущества</h2>
-      <p>В первую очередь, это — <span>Прямые поставки запчастей без посредников!</span></p>
+      <p>В первую очередь, это <span>Прямые поставки запчастей без посредников!</span></p>
       <div className='Advantages__wrapper'>
         <div className='Advantages__item'>
           <GiCargoCrane />

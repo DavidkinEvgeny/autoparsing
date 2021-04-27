@@ -4,12 +4,14 @@
     margin-bottom: 80px;
   }
   &__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-wrap: wrap;
   }
   &__item {
     text-align: center;
+    max-width: 300px;
     > svg {
       font-size: 100px;
     }

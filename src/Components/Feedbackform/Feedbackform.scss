@@ -1,97 +1,118 @@
 .Feedback {
-    &__title {
-        grid-area: title;
-        > p {
-            text-align: center;
-        }
+  &__title {
+    grid-area: title;
+    > p {
+      text-align: center;
+    }
+  }
+  > input {
+    border-radius: 30px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    outline: none;
+    &::placeholder {
+      font-size: 30px;
+      padding-left: 20px;
+    }
+    &[type='submit'] {
+      font-size: 30px;
+    }
+  }
+  > .PhoneInput {
+    margin-bottom: 40px;
+    > input {
+      border-radius: 30px;
+      height: 60px;
+      font-size: 24px;
+      outline: none;
+      &::placeholder {
+        font-size: 30px;
+        padding-left: 20px;
+      }
+    }
+  }
+  &__header {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 600px;
+    background: rgba(#fff, .5);
+    box-sizing: border-box;
+    padding: 40px 20px;
+    border: 3px solid red;
+    border-radius: 10px;
+    > input {
+      width: 100%;
+      height: 60px;
+      &[type='submit'] {
+        color: red;
+      }
+    }
+  }
+  &__footer {
+    background: #000000;
+    box-sizing: border-box;
+    padding: 60px 0 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title title title"
+                          "name tel submit";
+    & .Feedback__title {
+      color: #fff;
+      > h3 {
+        font-size: 68px;
+      }
+      > p {
+        font-size: 40px;
+      }
     }
     > input {
-        border-radius: 30px;
-        margin-bottom: 40px;
-        font-size: 24px;
-        outline: none;
-        &::placeholder {
-            font-size: 30px;
-            padding-left: 20px;
-        }
-        &[type='submit'] {
-            font-size: 30px;
-        }
+      width: 600px;
+      height: 60px;
+      margin: 120px auto 0;
+      border: 3px solid #fff;
+      background: rgba(#fff, .2);
+      color: #fff;
+      &[type="text"] {
+          grid-area: name;
+      }
+      &[type="submit"] {
+        grid-area: submit;
+        color: #fff;
+        background: rgba(#fff, .2);
+      }
     }
     > .PhoneInput {
-        margin-bottom: 40px;
-        > input {
-            border-radius: 30px;
-            height: 60px;
-            font-size: 24px;
-            outline: none;
-            &::placeholder {
-                font-size: 30px;
-                padding-left: 20px;
-            }
-        }
+      grid-area: tel;
+      width: 600px;
+      height: 60px;
+      margin: 120px auto 0;
+      > input {
+        border: 3px solid #fff;
+        background: rgba(#fff, .2);
+        color: #fff;
+      }
     }
-    &__header {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 600px;
-        background: rgba(#fff, .5);
-        box-sizing: border-box;
-        padding: 40px 20px;
-        border: 3px solid red;
-        border-radius: 10px;
-        > input {
-            width: 100%;
-            height: 60px;
-            &[type='submit'] {
-                color: red;
-            }
-        }
-    }
-    &__footer {
-        background: #000000;
-        box-sizing: border-box;
-        padding: 60px 0 120px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "title title title"
-                             "name tel submit";
+    @media(max-width: 1440px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "title "
+                           "name"
+                           "tel"
+                           "submit";
         & .Feedback__title {
-            color: #fff;
-            > h3 {
-                font-size: 68px;
-            }
-            > p {
-                font-size: 40px;
-            }
+        > h3 {
+          font-size: 28px;
         }
-        > input {
-            width: 600px;
-            height: 60px;
-            margin: 120px auto 0;
-            border: 3px solid #fff;
-            background: rgba(#fff, .2);
-            color: #fff;
-            &[type="text"] {
-                grid-area: name;
-            }
-            &[type="submit"] {
-                grid-area: submit;
-                color: #fff;
-                background: rgba(#fff, .2);
-            }
+        > p {
+          font-size: 24px;
         }
-        > .PhoneInput {
-            grid-area: tel;
-            width: 600px;
-            height: 60px;
-            margin: 120px auto 0;
-            > input {
-                border: 3px solid #fff;
-                background: rgba(#fff, .2);
-                color: #fff;
-            }
-        }
+      }
+      > input {
+        width: 280px;
+      }
+      .PhoneInput {
+        width: 280px;
+      }
     }
+  }
 }

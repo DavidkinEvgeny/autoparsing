@@ -40,7 +40,7 @@ function Sparepartsform() {
 
   return(
     <div className='Sparepartsform'>
-
+      <h2>Связаться с Вами?</h2>
       <form
         onSubmit={handleSubmit
         //   (e) => {
