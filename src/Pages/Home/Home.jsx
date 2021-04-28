@@ -9,7 +9,7 @@ import Mainwrapper from '../../UI/Mainwrapper/Mainwrapper'
 function Home() {
   return(
     <Mainwrapper>
-      {/* <Homeheader /> */}
+      <Homeheader />
       <Advantages />
       <Makeorder />
       <Feedbackform classes='Feedback__footer'/>

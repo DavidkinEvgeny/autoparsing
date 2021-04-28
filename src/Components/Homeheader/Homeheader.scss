@@ -11,7 +11,9 @@
         width: 80%;
         height: 80%;
         border: 10px solid red;
-        
+        @media(max-width: 1440px) {
+            width: 95%;
+        }
     }
     &__title {
         width: calc(100% - 620px);
@@ -49,6 +51,44 @@
                 border: 5px solid yellow;
                 background: rgba(#ff0, .2);
                 color: yellow;
+            }
+        }
+    }
+    @media(max-width: 1024px) {
+        height: auto;
+        &__wrapper {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        &__title {
+            width: 100%;
+            padding: 0;
+            > h1 {
+                font-size: 38px;
+            }
+            > p {
+                font-size: 22px;
+            }
+        }
+        &__price {
+            position: relative;
+            margin: 80px auto 40px;
+            width: 80%;
+            > a {
+                font-size: 22px;
+                > svg {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+    @media(max-width: 320px) {
+        &__title {
+            > h1 {
+                font-size: 24px;
+            }
+            > p {
+                font-size: 18px;
             }
         }
     }

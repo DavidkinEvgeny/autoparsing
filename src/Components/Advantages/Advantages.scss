@@ -30,4 +30,13 @@
     background-size: cover;
     background-attachment: fixed;
   }
+  @media(max-width: 768px) {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  }
+  @media(max-width: 480px) {
+    > p {
+      font-size: 18px;
+    }
+  }
 }

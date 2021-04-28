@@ -14,7 +14,9 @@
     max-width: 300px;
     > svg {
       font-size: 100px;
-    }
-    
+    }    
+  }
+  @media(max-width: 768px) {
+    margin-bottom: 60px;
   }
 }
